@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./img/ico/Icons-Land-Metro-Raster-Sport-Casino-Playing-Cards.ico" type="image/png">
+</head>
+<body>
+<div id="modal" class="modal">
+    <div class="container-login">
+        <h2>Blackjack</h2>
+        <img class="image-start-pg" src="./img/ico/png.png" alt="game-pic">
+        <label class="label-name">Enter your name</label>
+        <input id="username" class="input" maxlength="10" name="username" type="text" placeholder="name"
+               value="">
+        <p class="incorrect-input"></p>
+        <div>
+            <a href="#">
+                <button class="button-login">Enter</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <img class="image-bg">
+    <h2>Dealer<span id="dealer-sum"></span></h2>
+    <div id="dealer-cards">
+        <img id="hidden" src="./img/cards/BACK.png" alt="img">
+    </div>
+    <div>
+        <p id="results"></p>
+    </div>
+
+    <h2 class="user-name"><span id="your-sum"></span></h2>
+    <div id="your-cards"></div>
+    <br>
+    <button class="buttons" id="hit">Add</button>
+    <button class="buttons" id="stay">Show</button>
+    <button class="buttons" id="reset">Retry</button>
+	 <button class="buttons" id="exit">Close</button>
+</div>
+<script src="./main.js"></script>
+</body>
+</html>
